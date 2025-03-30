@@ -4,13 +4,13 @@ export default function Home() {
       <header>
         <div className="glass navbar z-50 bg-base-100 shadow-sm fixed [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">
           <div className="navbar-start">
-            <a className="btn btn-ghost border-0 text-2xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">Nadir CHAÏEB</a>
+            <a href="#" className="btn btn-ghost border-0 text-2xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)]">Nadir CHAÏEB</a>
           </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-xl">
-            <li className=" active:bg-blue-600"><a>Projets</a></li>
-            <li><a>Compétences</a></li>
-            <li><a>Contact</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
   <div className="navbar-end">
@@ -48,7 +48,7 @@ export default function Home() {
       src="/assets/twitter.png"
       alt="my_twitter" />
   </figure>
-  <div className="card-body block">
+  <div className="card-body block h-50">
     <h2 className="card-title">
       TWEETHUNTER
     </h2>
@@ -71,7 +71,7 @@ export default function Home() {
       src="/assets/portfolio.png"
       alt="portfolio" />
   </figure>
-  <div className="card-body block">
+  <div className="card-body block h-50">
     <h2 className="card-title">
       Portfolio
     </h2>
@@ -92,7 +92,7 @@ export default function Home() {
       src="/assets/connect4.png"
       alt="connect4" />
   </figure>
-  <div className="card-body block">
+  <div className="card-body block h-50">
     <h2 className="card-title">
       Puissance 4
     </h2>
@@ -112,7 +112,7 @@ export default function Home() {
       src="/assets/spotify.png"
       alt="spotify" />
   </figure>
-  <div className="card-body block">
+  <div className="card-body block h-50">
     <h2 className="card-title">
       Spotify
     </h2>
@@ -128,7 +128,7 @@ export default function Home() {
 </div>
 </div>
   </section>
-  <section className="bg-[url(/assets/landscape.jpg)] w-screen h-screen bg-no-repeat bg-cover" id="compétences">
+  <section id="skills" className="bg-[url(/assets/landscape.jpg)] w-screen h-screen bg-no-repeat bg-cover">
   <div className="py-10">
       <h2 className="text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)] font-bold text-center">Mes compétences</h2>
       </div>
@@ -176,18 +176,18 @@ export default function Home() {
       </div>
       </div>
   </section>
-  <section className="bg-[url(/assets/cell_game.jpeg)] w-screen h-screen bg-no-repeat bg-cover" id="contact">
+  <section id="contact" className="bg-[url(/assets/cell_game.jpeg)] w-screen h-screen bg-no-repeat bg-cover">
   <div className="py-10">
       <h2 className="text-5xl [text-shadow:_0_2px_4px_rgb(0_0_0_/_0.8)] font-bold text-center">Me contacter</h2>
       </div>
       <div className="flex justify-center items-center w-full h-7/10">
        <form action="mailto:nadir.chaieb@epitech.eu" method="post" className="w-1/2 space-y-6 glass-b p-8 rounded-xl">
        <label className="block mb-2">Nom</label>
-  <input type="text" className="w-full p-3 rounded bg-white text-black focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Nom" />
+  <input required type="text" className="w-full p-3 rounded bg-white text-black focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Nom" />
   <label className="block mb-2">Email</label>
-  <input type="email" className="w-full p-3 rounded bg-white text-black focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Email" />
+  <input required type="email" className="w-full p-3 rounded bg-white text-black focus:ring-2 focus:ring-blue-500 outline-none" placeholder="Email" />
   <label className="block mb-2">Message</label>
-  <textarea className="w-full p-3 rounded bg-white text-black focus:ring-2 focus:ring-blue-500 outline-none h-32" name="" id=""></textarea>
+  <textarea required className="w-full p-3 rounded bg-white text-black focus:ring-2 focus:ring-blue-500 outline-none h-32" name="" id=""></textarea>
 <button className="w-full py-3 rounded-full font-medium flex items-center justify-center gap-2 transition-colors bg-blue-600 hover:bg-blue-700">
   Envoyer
   </button>
